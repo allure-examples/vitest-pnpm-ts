@@ -2,7 +2,7 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
-    setupFiles: ["./vitest.setup.ts"],
+    setupFiles: ["allure-vitest/setup"],
     reporters: [
       "default",
       ["allure-vitest/reporter", { resultsDir: "./out/allure-results" }],
